@@ -28,11 +28,9 @@ export default {
 
 <style>
 .main{
-  display:flex
+  display:flex;
+  height: calc(100vh - 5.6rem);
 }
-
-
-
 .right{
   display: flex;
   flex-direction: column;

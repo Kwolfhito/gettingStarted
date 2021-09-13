@@ -1,14 +1,39 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from "../pages/Home.vue"
+import GettingStarted from "../pages/GettingStarted/GettingStarted.vue"
+import Dashboard from "../pages/Dashboard/Dashboard.vue"
+import Settings from "../pages/Settings/Settings.vue"
+import WhatsNew from "../pages/WhatsNew/WhatsNew.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path:'',
+    redirect:'/home'
+  },
+  {
+    path: '/home',
+    component: Home,
+    children: [
+      {
+        path: 'gettingStarted',
+        component: GettingStarted
+      },
+      {
+        path: 'Dashboard',
+        component: Dashboard,
+      },
+      {
+        path: 'Settings',
+        component: Settings,
+      },
+      {
+        path: 'WhatsNew',
+        component: WhatsNew
+      }
+    ]
   },
   // {
   //   path: '/about',

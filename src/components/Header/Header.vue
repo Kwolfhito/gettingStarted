@@ -55,6 +55,7 @@ export default {
   color:#202223;
   z-index: 10;
   position: relative;
+  font-size: 1.4rem;
 }
 .store {
   background: transparent
@@ -106,6 +107,7 @@ export default {
   font-weight: 500;
   display:flex;
   align-items: center;
+  margin-right: 2rem;
 }
 
 .user-icon{

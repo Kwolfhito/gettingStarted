@@ -25,13 +25,22 @@ img{
     font-size: 1.4rem;
     font-weight: 600;
     padding-left:1.2rem;
+    position: relative;
 }
 
 .tab-nav-item:hover{
     background-color: #edeeef;
     color:#007B5C;
-  border-left:0.4rem solid #008060;
     cursor:pointer;
+}
+
+.tab-nav-item:hover::before{
+    content:'';
+    height: 3.3rem;
+    width: 0.3rem;
+    background-color: #007B5C;
+    position: absolute;
+    left:0;
 }
 
 span{

@@ -6,7 +6,7 @@
       <div class="right">
         <app-info></app-info>
       <switch-tab></switch-tab>
-      <router-view></router-view>
+      <router-view class="current-tab"></router-view>
       </div>
  </div>
   </div>
@@ -36,6 +36,14 @@ export default {
   flex-wrap: wrap;
   width: calc(100vw - 24rem);
   align-content: flex-start;
+}
+.current-tab{
+  background-color: #f6f6f7;
+  flex-grow: 1;
+  height: calc(100vh - 19.5rem);
+  display:flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 </style>

@@ -11,7 +11,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path:'',
-    redirect:'/home'
+    redirect:'/home',
   },
   {
     path: '/home',
@@ -19,18 +19,34 @@ const routes = [
     children: [
       {
         path: 'gettingStarted',
+        name: 'GettingStarted',
+        meta:{
+          tab: 'gettingStarted'
+        },
         component: GettingStarted
       },
       {
         path: 'Dashboard',
+        name: 'Dashboard',
+        meta:{
+          tab: 'Dashboard'
+        },
         component: Dashboard,
       },
       {
         path: 'Settings',
+        name: 'Settings',
+        meta:{
+          tab: 'Settings'
+        },
         component: Settings,
       },
       {
         path: 'WhatsNew',
+        name: "WhatsNew",
+        meta:{
+          tab: 'WhatsNew'
+        },
         component: WhatsNew
       }
     ]

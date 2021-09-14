@@ -1,8 +1,9 @@
 <template>
   <div id="home">
     <Header></Header>
+    <Header class="fixed-header"></Header>
     <div class="main">
-      <tab-bar></tab-bar>
+      <tab-bar class="fixed-tabbar"></tab-bar>
       <div class="right">
         <app-info></app-info>
       <switch-tab></switch-tab>
@@ -44,6 +45,21 @@ export default {
   display:flex;
   flex-direction: column;
   align-items:center;
+}
+
+.fixed-header{
+  position:fixed;
+  top: 0;
+  left:0;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.fixed-header .user{
+  padding-right:3rem;
+}
+
+.fixed-tabbar{
 }
 
 </style>

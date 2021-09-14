@@ -44,7 +44,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 #head {
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,6 @@ export default {
   align-items: center;
   color:#202223;
   z-index: 10;
-  position: relative;
   font-size: 1.4rem;
 }
 .store {
@@ -107,7 +106,6 @@ export default {
   font-weight: 500;
   display:flex;
   align-items: center;
-  margin-right: 2rem;
 }
 
 .user-icon{
